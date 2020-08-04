@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, 
+        initial-scale=1.0, 
+        user-scalable=no" />
+	<meta http-Equiv="Cache-Control" Content="no-cache">
+	<meta http-Equiv="Pragma" Content="no-cache">
+	<meta http-Equiv="Expires" Content="0">
+	<title>Shared Frequencies</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment-with-locales.min.js"></script>
+	<script type="text/javascript" src="https://momentjs.com/downloads/moment-timezone-with-data.min.js"></script>
+	<script type="text/css" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link rel="icon" href="assets/favicon.ico">
+</head>
+
+<body>
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Add a placeholder for the Twitch embed -->
+	<div id="twitch-embed"></div>
+
+	<!-- Load the Twitch embed script -->
+	<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+	<!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+	<script type="text/javascript"> new Twitch.Embed("twitch-embed", { width: 1100, height: 660, channel: "sharedfrequenciesradio"});</script>
+</body>
+
+</html>
